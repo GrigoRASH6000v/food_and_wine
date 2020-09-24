@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  font-size: 10px; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  border: 1px solid red;
+  margin: 0 auto; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto/Roboto-Medium.woff") format("woff"), url("../fonts/roboto/Roboto-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Roboto-light';
+  src: url("../fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+.header {
+  width: 100%;
+  padding: 5rem 12rem;
+  display: flex;
+  justify-content: space-between; }
+  .header_logo {
+    display: flex;
+    align-items: center; }
+    .header_logo_bottle {
+      width: 26px;
+      height: 94px; }
+    .header_logo_name {
+      width: 160px;
+      height: 94px;
+      margin-left: 45px; }
+  .header_general-block {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1310px;
+    width: 100%; }
+    .header_general-block_top {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+      .header_general-block_top .header_navigation {
+        display: flex;
+        justify-content: space-between;
+        max-width: 72rem;
+        width: 100%; }
+        .header_general-block_top .header_navigation_link {
+          transition-property: color;
+          transition-duration: 0.3s;
+          color: #000000;
+          font-size: 2.5rem;
+          font-family: 'Roboto-light'; }
+          .header_general-block_top .header_navigation_link:hover {
+            color: #842140; }
+      .header_general-block_top .header_phones {
+        display: flex;
+        justify-content: space-between;
+        max-width: 49rem;
+        width: 100%; }
+        .header_general-block_top .header_phones p {
+          color: #842140;
+          font-size: 2.9rem;
+          font-family: 'Roboto';
+          font-weight: bold; }
+    .header_general-block_bottom {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .header_general-block_bottom .header_burger-menu {
+        display: flex; }
+        .header_general-block_bottom .header_burger-menu_btn {
+          padding: 0;
+          background: none;
+          border: none; }
+          .header_general-block_bottom .header_burger-menu_btn svg {
+            transition-property: fill;
+            transition-duration: 0.3s;
+            fill: #842140; }
+            .header_general-block_bottom .header_burger-menu_btn svg:hover {
+              fill: #5b172c; }
+        .header_general-block_bottom .header_burger-menu p {
+          font-size: 4rem;
+          font-family: 'Roboto';
+          color: #842140;
+          margin-left: 2.2rem; }
+      .header_general-block_bottom .header_search-field {
+        position: relative; }
+        .header_general-block_bottom .header_search-field input[type=search] {
+          padding-left: 6rem;
+          background: none;
+          position: relative;
+          transition-property: border;
+          transition-duration: 0.3s;
+          font-size: 1.8rem;
+          max-width: 32.6rem;
+          width: 100%;
+          height: 4.3rem;
+          border: 2px solid transparent;
+          outline: none; }
+          .header_general-block_bottom .header_search-field input[type=search]:focus::-webkit-input-placeholder {
+            color: transparent; }
+          .header_general-block_bottom .header_search-field input[type=search]:focus::-moz-placeholder {
+            color: transparent; }
+          .header_general-block_bottom .header_search-field input[type=search]:focus:-moz-placeholder {
+            color: transparent; }
+          .header_general-block_bottom .header_search-field input[type=search]:focus:-ms-input-placeholder {
+            color: transparent; }
+          .header_general-block_bottom .header_search-field input[type=search]:focus {
+            border-color: #817f80; }
+          .header_general-block_bottom .header_search-field input[type=search]::-webkit-search-decoration, .header_general-block_bottom .header_search-field input[type=search]::-webkit-search-cancel-button, .header_general-block_bottom .header_search-field input[type=search]::-webkit-search-results-button, .header_general-block_bottom .header_search-field input[type=search]::-webkit-search-results-decoration {
+            display: none; }
+        .header_general-block_bottom .header_search-field::before {
+          display: inline-block;
+          position: absolute;
+          content: "";
+          width: 3.2rem;
+          height: 3.2rem;
+          background: url("../img/magnifying.svg") center no-repeat;
+          background-size: cover;
+          top: 5px;
+          left: 5px; }
+      .header_general-block_bottom .header_callback {
+        cursor: pointer;
+        max-width: 20.3rem;
+        width: 100%;
+        height: 4.3rem;
+        background: none;
+        border: 2px solid transparent;
+        color: #817f80;
+        font-size: 1.6rem;
+        transition-property: border;
+        transition-duration: 0.3s;
+        outline: none; }
+        .header_general-block_bottom .header_callback:hover {
+          border-color: #817f80; }
+      .header_general-block_bottom .header_account {
+        background: url("../img/man.svg") center no-repeat;
+        width: 38px;
+        height: 38px; }
+      .header_general-block_bottom .header_vertical-line {
+        height: 36px;
+        border-right: 2px solid #842140; }
+      .header_general-block_bottom .header_favourites {
+        background: url("../img/heart.svg") center no-repeat;
+        width: 40px;
+        height: 36px; }
+      .header_general-block_bottom .header_graph {
+        background: url("../img/graphic.svg") center no-repeat;
+        width: 44px;
+        height: 36px; }
+      .header_general-block_bottom .header_cart {
+        background: url("../img/cart.svg") center no-repeat;
+        width: 35px;
+        height: 36px; }
+      .header_general-block_bottom .btn {
+        position: relative;
+        background-size: cover;
+        border: none;
+        outline: none;
+        padding: 0;
+        cursor: pointer; }
+        .header_general-block_bottom .btn_figure {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          right: -7px;
+          top: -3px;
+          width: 1.6rem;
+          height: 1.6rem;
+          color: #fff;
+          border-radius: 50%;
+          background-color: #842140; }
+
+/*# sourceMappingURL=style.css.map */

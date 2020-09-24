@@ -1,0 +1,195 @@
+.header{
+    width: 100%;
+    padding: 5rem 12rem;
+    display: flex;
+    justify-content: space-between;
+    &_logo{
+        display: flex;
+        align-items: center;
+        &_bottle{
+            width: 26px;
+            height: 94px;
+        }
+        &_name{
+            width: 160px;
+            height: 94px;
+            margin-left: 45px;
+        }
+    }
+    &_general-block{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1310px;
+        width: 100%;
+        &_top{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .header_navigation{
+                display: flex;
+                justify-content: space-between;
+                max-width: 72rem;
+                width: 100%;
+                &_link{
+                    transition-property: color;
+                    transition-duration: 0.3s;
+                    color: $clr-black;
+                    font-size: 2.5rem;
+                    font-family: 'Roboto-light';
+                    &:hover{
+                        color: $clr-wine;
+                    }
+                }
+            }
+            .header_phones{
+                display: flex;
+                justify-content: space-between;
+                max-width: 49rem;
+                width: 100%;
+                p{
+                    color: $clr-wine;
+                    font-size: 2.9rem;
+                    font-family: 'Roboto';
+                    font-weight: bold;
+                }
+            }
+        }
+        &_bottom{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .header_burger-menu{
+                display: flex;
+                &_btn{
+                    padding: 0;
+                    background: none;
+                    border: none;
+                    svg{
+                        transition-property: fill;
+                        transition-duration: 0.3s;
+                        fill: $clr-wine;
+                        &:hover{
+                            fill: darken($clr-wine, 10%);
+                        }
+                    }
+                }
+                p{
+                    font-size: 4rem;
+                    font-family: 'Roboto';
+                    color: $clr-wine;
+                    margin-left: 2.2rem;
+                }
+            }
+            .header_search-field{
+                position: relative;
+                input[type=search]{
+                    padding-left: 6rem;
+                    background: none;
+                    position: relative;
+                    transition-property: border;
+                    transition-duration: 0.3s;
+                    font-size: 1.8rem;
+                    max-width: 32.6rem;
+                    width: 100%;
+                    height: 4.3rem;
+                    border: 2px solid transparent;
+                    outline: none;
+                    &:focus::-webkit-input-placeholder {
+                        color: transparent;
+                    }
+                    &:focus::-moz-placeholder {
+                        color: transparent;
+                    }
+                    &:focus:-moz-placeholder {
+                        color: transparent;
+                    }
+                    &:focus:-ms-input-placeholder {
+                        color: transparent;
+                    }
+                    &:focus{
+                        border-color: $clr-light-gray;
+                    }
+                    &::-webkit-search-decoration, 
+                    &::-webkit-search-cancel-button, 
+                    &::-webkit-search-results-button, 
+                    &::-webkit-search-results-decoration {
+                        display: none;
+                    }
+                }
+                &::before{
+                    display: inline-block;
+                    position: absolute;
+                    content:"";
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    background: url('../img/magnifying.svg') center no-repeat;
+                    background-size: cover;
+                    top: 5px;
+                    left: 5px;
+                }
+            }
+            .header_callback{
+                cursor: pointer;
+                max-width: 20.3rem;
+                width: 100%;
+                height: 4.3rem;
+                background: none;
+                border: 2px solid transparent;
+                color: $clr-light-gray;
+                font-size: 1.6rem;
+                transition-property: border;
+                transition-duration: 0.3s;
+                &:hover{
+                    border-color: $clr-light-gray;
+                }
+                outline: none;
+            }
+            .header_account{
+                background: url('../img/man.svg') center no-repeat;
+                width: 38px;
+                height: 38px;
+            }
+            .header_vertical-line{
+                height: 36px;
+                border-right: 2px solid $clr-wine;
+            }
+            .header_favourites{
+                background: url('../img/heart.svg') center no-repeat;
+                width: 40px;
+                height: 36px;
+            }
+            .header_graph{
+                background: url('../img/graphic.svg') center no-repeat;
+                width: 44px;
+                height: 36px;
+            }
+            .header_cart{
+                background: url('../img/cart.svg') center no-repeat;
+                width: 35px;
+                height: 36px;
+            }
+            .btn{
+                position: relative;
+                background-size: cover;
+                border: none;
+                outline: none;
+                padding: 0;
+                cursor: pointer;
+                &_figure{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    right: -7px;
+                    top: -3px;
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    color: $clr-white;
+                    border-radius: 50%;
+                    background-color: $clr-wine;
+                }
+            }
+        }
+    }
+}
