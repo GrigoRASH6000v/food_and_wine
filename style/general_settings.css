@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  border: 1px solid red;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=general_settings.css.map */
