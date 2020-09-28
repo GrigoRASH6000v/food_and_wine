@@ -1,0 +1,163 @@
+.hit-sales{
+    padding: 5rem 0 6.4rem 0;
+    &_slider{
+        position: relative;
+        margin-bottom: 7rem;
+        .slick-list {
+            margin: 0 auto;
+            max-width: 167rem;
+            width: 100%;
+        }
+        .slick-arrow{
+            z-index: 1;
+            position: absolute;
+            width: 8.4rem;
+            height: 8.4rem;
+            border-radius: 50%;
+            border-color: transparent;
+            color: transparent;
+            background: url('../img/arrow.svg') center center no-repeat;
+            background-size: 25%;
+            background-color: rgba($color: lighten($clr-light-gray, 30%), $alpha: 0.6);
+            outline: none;
+            padding: 0;
+        }
+        .slick-arrow.slick-prev{
+            top: 50%;
+            left:-4.2rem;
+            margin-top: -4.2rem;
+        }
+        .slick-arrow.slick-next{
+            transform: rotate(180deg);
+            top: 50%;
+            right:-4.2rem;
+            margin-top: -4.2rem;
+        }
+        &_item{
+            display: flex;
+            margin: 0 2.1rem;
+            position: relative;
+            padding: 0 1.5rem 1.5rem 1.5rem;
+            transition-property: border-color;
+            transition-duration: 0.3s;
+            border: 2px solid transparent;
+            width: 30rem;
+            height: 48rem;
+            &:hover{
+                border-color: $clr-light-gray;
+            }
+            &_label{
+                position: absolute;
+                left: 0;
+                top: 1.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 10.2rem;
+                height: 2.8rem;
+                background-color: $clr-wine;
+                &_star{
+                    margin-right: 1rem;
+                    width: 2rem;
+                    height: 2rem;
+                }
+                &_text{
+                    font-size: 2.2rem;
+                    font-family: 'Roboto';
+                    color: $clr-white;
+                }
+            }
+            &_left-section{
+                padding-top: 7.8rem;
+                li{
+                    font-size: 1.75rem;
+                    margin-bottom: 0.5rem;
+                    font-family: 'Roboto-light';
+                    &:nth-child(1){
+                        font-size: 2.2rem;
+                        font-family: 'Roboto';
+                        color: $clr-black;
+                        margin-bottom: 3rem;
+                    }
+                    &:nth-child(2){
+                        margin-bottom: 3rem;
+                    }
+                    &:nth-child(5){
+                        margin-bottom: 3rem;
+                    }
+                    &:nth-child(6){
+                        font-size: 3.05rem;
+                        font-weight: bold;
+                        span{
+                            font-size: 2.2rem;
+                        }
+                        margin-bottom: 5.5rem;
+                    }
+                    
+                }
+                .hit-sales_slider_item_buy,
+                .hit-sales_slider_item_buy-fast{
+                    width: 15.5rem;
+                    height: 3.3rem;
+                    background-color: $clr-wine;
+                    color: $clr-white;
+                    font-size: 1.55rem;
+                    font-family: 'Roboto';
+                    border: none;
+                    outline: none;
+                    margin-bottom: 1.5rem;
+                    
+                }
+                .hit-sales_slider_item_buy-fast{
+                    background-color: $clr-light-gray;
+                }
+            }
+            &_right-section{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding-bottom: 0.5rem;
+                img{
+                    margin-bottom: 1rem;
+                }
+                .hit-sales_slider_item_change-quantity{
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 2.3rem;
+                    input[type=text]{
+                        width: 2rem;
+                        font-size: 2.9rem;
+                        font-family: 'Roboto';
+                        color: $clr-wine;
+                        border: none;
+                    }
+                    button{
+                        border: none;
+                        background: none;
+                        outline: none;
+                        font-size: 2.9rem;
+                        color: $clr-wine;
+                    }
+                }
+                .hit-sales_slider_item_good-operation{
+                    display: flex;
+                    justify-content: center;
+                    button{
+                        background: none;
+                        border: none;
+                        outline: none;
+                        svg{
+                            fill: $clr-light-gray;
+                            transition-property: fill;
+                            transition-duration: 0.3s;
+                        }
+                        &:hover svg{
+                            fill: $clr-wine;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

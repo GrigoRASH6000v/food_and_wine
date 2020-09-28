@@ -1,10 +1,32 @@
-// Общие настройки
-@import 'global_settings.scss';
 // Настройки цветов
 @import 'colors.scss';
+
+// Общие настройки
+@import 'global_settings.scss';
+
 // Настройки шрифтов
 @import 'fonts.scss';
 
 //Стили шапки
 @import 'header.scss';
 
+//Стили - топ слайдера
+@import 'slider-top.scss';
+
+//Стили слайдера - хит продаж
+@import 'slider-hit-sales.scss';
+
+//Стили для блока - новости и обзоры
+@import 'news-reviews.scss';
+
+//Стили для блока - специальные предложения
+@import 'special-offer.scss';
+
+//Стили для блока - оставайтесь на связи
+@import 'stay-in-touch.scss';
+
+//Стили для футера
+@import 'footer.scss';
+
+//Медиа запросы
+@import '@media.scss';

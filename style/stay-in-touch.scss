@@ -1,0 +1,98 @@
+.stay-in-touch{
+    padding: 5rem 0 9rem 0;
+    border-top: 3px solid $clr-light-gray;
+    
+    &_wrp{
+        display: flex;
+        flex-wrap: wrap;
+        .stay-in-touch_img{
+            max-width: 69.2rem;
+            width: 100%;
+            margin-right: 4rem;
+        }
+        .stay-in-touch_text-content{
+        
+            max-width: 79rem;
+            width: 100%;
+            &_title{
+                font-family: "Roboto-light";
+                font-size: 2.92rem;
+                margin-bottom: 5.7rem;
+            }
+            &_email{
+                width: 100%;
+                border: none;
+                border-bottom: 2px solid $clr-light-gray;
+                font-size: 2.08rem;
+                padding-bottom: 0.8rem;
+                padding-left: 0.5rem;
+                outline: none;
+                margin-bottom: 2.5rem;
+                &:focus::-webkit-input-placeholder {
+                    color: transparent;
+                }
+                &:focus::-moz-placeholder {
+                    color: transparent;
+                }
+                &:focus:-moz-placeholder {
+                    color: transparent;
+                }
+                &:focus:-ms-input-placeholder {
+                    color: transparent;
+                }
+                &:focus{
+                    border-color: $clr-light-gray;
+                }
+            }
+            &_submit-btn{
+                font-family: 'Roboto-light';
+                width: 29rem;
+                height: 7rem;
+                border: 2px solid transparent;
+                font-size: 2.5rem;
+                background: none;
+                transition-property: border-color;
+                transition-duration: 0.3s;
+                margin-bottom: 8rem;
+                &:hover{
+                    border-color: $clr-light-gray;
+                }
+                
+            }
+            &_description{
+                font-size: 2.92rem;
+                font-family: "Roboto-light";
+                margin-bottom: 4.1rem;
+            }
+            &_social-icons{
+                display: flex;
+                justify-content: space-between;
+                max-width: 28rem;
+                width: 100%;
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 8rem;
+                    height: 8rem;
+                    border-radius: 50%;
+                    background-color: $clr-wine;
+                    transition-property: fill, background-color;
+                    transition-duration: 0.3s;
+                    border: 3px solid $clr-wine;
+                    svg{
+                        width: 4rem;
+                        fill: $clr-white;
+                    }
+                    &:hover{
+                        background-color: $clr-white;
+                        svg{
+                            fill: $clr-wine;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
