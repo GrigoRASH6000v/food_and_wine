@@ -1,3 +1,5 @@
+@import 'colors.scss';
+
 .hit-sales{
     padding: 5rem 0 6.4rem 0;
     &_slider{
@@ -93,12 +95,11 @@
                         }
                         margin-bottom: 5.5rem;
                     }
-                    
                 }
                 .hit-sales_slider_item_buy,
                 .hit-sales_slider_item_buy-fast{
                     width: 15.5rem;
-                    padding: 0.8rem 0;
+                    padding: 1rem 0;
                     background-color: $clr-wine;
                     color: $clr-white;
                     font-size: 1.55rem;
@@ -159,5 +160,4 @@
             }
         }
     }
-    
 }

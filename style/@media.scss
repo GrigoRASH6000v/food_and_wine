@@ -109,9 +109,15 @@
         padding-left: 5rem;
         padding-right: 5rem;
     }
-    .footer_top{
+    .footer_top,
+    .footer_bottom{
         padding-left: 5rem;
         padding-right: 5rem;
+    }
+    .footer_bottom{
+        p{
+            text-align: center;
+        }
     }
 }
 @media screen and (max-width: 600px){

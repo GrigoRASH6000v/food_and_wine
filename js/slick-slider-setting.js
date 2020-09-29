@@ -11,7 +11,7 @@ $(document).ready(function(){
         slidesToShow: 4,
         slidesToScroll: 1,
         variableWidth: true,
-        //centerMode: true,
+        centerMode: true,
         responsive: [
             {
             breakpoint: 1024,
