@@ -1,0 +1,74 @@
+
+
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+
+.header-slider{
+    position: relative;
+    &_item{
+        position: relative;
+        &_description{
+            max-width: 115rem;
+            width: 100%;
+            padding: 6rem 0rem 6rem 12rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            &_title{
+                font-size: 7.85rem;
+                color: $clr-white;
+                font-family: 'Romul';
+                font-weight: 200;
+                margin-bottom: 3.8rem;
+            }
+            &_text,
+            &_special-offer,
+            &_subscription-options{
+                font-size: 2.5rem;
+                color: $clr-white;
+                font-family: 'Roboto-light';
+            }
+            &_text{
+                line-height: 3rem;
+                margin-bottom: 6rem;
+            }
+            &_special-offer{
+                margin-bottom: 1.9rem;
+            }
+            
+        }
+    }
+    .slick-dots{
+        position: absolute;
+        display: flex;
+        right: 12rem;
+        bottom: 1.6rem;
+    }
+    .slick-dots li{
+        margin: 0 8px;
+    }
+    /* Активная точка */
+    .slick-dots li.slick-active button{
+        background-color: $clr-wine;
+    }
+    /* Элемент точки */
+    .slick-dots li button{
+        border: none;
+        border-radius: 50%;
+        font-size: 0;
+        width: 1.6rem;
+        height: 1.6rem;
+        transition-property: box-shadow;
+        transition-duration: 0.3s;
+        outline: none;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 2px 9px 17px $clr-black;
+        }
+    }
+}

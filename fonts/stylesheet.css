@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Romul';
+    src: url('Romul.woff2') format('woff2'),
+        url('Romul.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
