@@ -1,22 +1,23 @@
 /*
-Error: Undefined variable: "$clr-wine".
-        on line 22 of C:\Users\GrigoRASH\Desktop\Project\food_and_wine\style\global_settings.scss
+Error: Undefined variable: "$clr-light-gray".
+        on line 3 of C:\Users\GrigoRASH\Desktop\Project\food_and_wine\style\special-offer.scss
 
-17:     margin: 0 auto
-18: }
-19: .block-header{
-20:     font-size: 4rem;
-21:     font-family: 'Roboto';
-22:     color: $clr-wine;
-23:     margin-bottom: 4.8rem;
-24:     text-transform: uppercase;
-25: }
-26: main{
-27:     padding: 0 12rem;
+1: .special-offer{
+2:     padding: 5rem 0 9rem 0;
+3:     border-top: 3px solid $clr-light-gray;
+4:     .galary-blocks{
+5:         .width-sm{
+6:             max-width: 41rem;
+7:             
+8:         }
 
 Backtrace:
-C:\Users\GrigoRASH\Desktop\Project\food_and_wine\style\global_settings.scss:22
+C:\Users\GrigoRASH\Desktop\Project\food_and_wine\style\special-offer.scss:3
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
@@ -62,4 +63,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$clr-wine\".\A         on line 22 of C:\Users\GrigoRASH\Desktop\Project\food_and_wine\style\global_settings.scss\A \A 17:     margin: 0 auto\A 18: }\A 19: .block-header{\A 20:     font-size: 4rem;\A 21:     font-family: 'Roboto';\A 22:     color: $clr-wine;\A 23:     margin-bottom: 4.8rem;\A 24:     text-transform: uppercase;\A 25: }\A 26: main{\A 27:     padding: 0 12rem;"; }
+  content: "Error: Undefined variable: \"$clr-light-gray\".\A         on line 3 of C:\Users\GrigoRASH\Desktop\Project\food_and_wine\style\special-offer.scss\A \A 1: .special-offer{\A 2:     padding: 5rem 0 9rem 0;\A 3:     border-top: 3px solid $clr-light-gray;\A 4:     .galary-blocks{\A 5:         .width-sm{\A 6:             max-width: 41rem;\A 7:             \A 8:         }"; }

@@ -1,5 +1,4 @@
 
-
 *{
     box-sizing: border-box;
     font-size: 10px;
@@ -12,7 +11,7 @@ a{
 }
 
 .container{
-    border: 1px solid red;
+  
     max-width: 1920px;
     width: 100%;
     margin: 0 auto
@@ -26,13 +25,10 @@ a{
 }
 main{
     padding: 0 12rem;
-    //filter: opacity();
     position: relative;
 }
 .blackout{
-   
     &::after {
-        
         content: '';
         position: absolute;
         width: 100%;
@@ -42,14 +38,8 @@ main{
         top: 0;
         opacity: 1;
         z-index: 3;
-        
     }
-    
 }
-.lock-scroll{
-    overflow: hidden;
-}
-
 
 //Стили для больших ссылок
 .big-link{
@@ -58,8 +48,9 @@ main{
     font-family: 'Roboto-light';
     color: $clr-black;
     border: 2px solid transparent;
-    background: url('../img/arrow-rotate.svg') 25rem center no-repeat;
+    background: url('../img/arrow-rotate.svg') no-repeat;
     background-size: 6%;
+    background-position: center right 20px;
     transition-property: border-color;
     transition-duration: 0.3s;
     &:hover{
@@ -83,8 +74,9 @@ main{
         margin-bottom: 1.5rem;
     }
     &_big-block{
-
         &_wrp{
+            
+           
             position: relative;
             &:hover {
                 .galary-blocks_big-block_date{
@@ -104,7 +96,7 @@ main{
             
         }
         &_img{
-            max-width: 69.2rem;
+            max-width: 69rem;
             width: 100%;
             margin-bottom: 2.4rem;
             

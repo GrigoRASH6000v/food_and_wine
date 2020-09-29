@@ -7,6 +7,7 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        align-items: center;
     }
     &_logo{
         margin-right: 2rem;
@@ -27,283 +28,310 @@
         flex-wrap: wrap;
         max-width: 1310px;
         width: 100%;
-        &_top{
-            width: 100%;
+        justify-content: space-between;
+        .header_navigation{
+            order: 1;
+            margin-right: 2rem;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            .header_navigation{
-                margin-right: 2rem;
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                max-width: 72rem;
-                width: 100%;
-                margin-bottom: 2rem;
-                &_link{
-                    transition-property: color;
+            max-width: 72rem;
+            width: 100%;
+            margin-bottom: 2rem;
+            &_link{
+                transition-property: color;
+                transition-duration: 0.3s;
+                color: $clr-black;
+                font-size: 2.5rem;
+                font-family: 'Roboto-light';
+                &:hover{
+                    color: $clr-wine;
+                }
+            }
+        }
+        .header_phones{
+            order: 2;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            p{
+                
+                color: $clr-wine;
+                font-size: 2.9rem;
+                font-family: 'Roboto';
+                font-weight: bold;
+                &:first-child{
+                    margin-right: 2rem;
+                }
+            }
+            
+        }
+        .header_burger-menu{
+            order:3;
+            z-index: 6;
+            position: relative;
+            display: flex;
+            &_btn{
+                position: relative;
+                z-index: 7;
+                padding: 0;
+                background: none;
+                border: none;
+                outline: none;
+                svg{
+                    transition-property: fill;
                     transition-duration: 0.3s;
-                    color: $clr-black;
-                    font-size: 2.5rem;
-                    font-family: 'Roboto-light';
+                    fill: $clr-wine;
                     &:hover{
+                        fill: darken($clr-wine, 10%);
+                    }
+                }
+            }
+            &_list{
+                padding-top: 8.8rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                display: flex;
+                flex-wrap: wrap;
+                top: -1rem;
+                left: -2rem;
+                position: absolute;
+                box-shadow: 0px 12px 20px $clr-light-gray;
+                background-color: $clr-white;
+                z-index: 5;
+                .col-1{
+                    order: 1;
+                }
+                .col-2{
+                    order: 2;
+                }
+                .col-3{
+                    order: 3;
+                }
+                .col-1,
+                .col-2,
+                .col-3{
+                    //width: 30%;
+                    margin: 0 1rem;
+                }
+                .col-5{
+                    order: 5;
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    flex-wrap: wrap;
+                }
+                .col-4{
+                    order: 4;
+                    .header_burger-menu_list_item{
+                        margin-right: 10rem;
+                    }
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    flex-wrap: wrap;
+                }
+                
+                &_item{
+                    margin-bottom: 4rem;
+                    &_title{
+                        font-size: 2.9rem;
+                        color: $clr-wine;
+                        font-family: 'Roboto';
+                    }
+                    ul{
+                        padding-top: 0.5rem;
+                        padding-left: 5.5rem;
+                        li{
+                            margin-bottom: 0.5rem;
+                            &:before{
+                                display: inline-block;
+                                content:'';
+                                width: 0.5rem;
+                                height: 0.5rem;
+                                
+                                background-color: $clr-black;
+                                border-radius: 50%;
+                                margin-bottom: 0.8rem;
+                                margin-right: 0.5rem;
+                            }
+                            a{
+                                font-size: 2.5rem;
+                                font-family: 'Roboto-light';
+                                color: $clr-black;
+                                cursor: pointer;
+                                &:hover{
+                                    color: $clr-wine;
+                                } 
+                            }
+                        }
+                    }
+                }
+                .hit-sales-link{
+
+                    width: 33%;
+                    height: 9rem;
+                    border-top: 3px solid $clr-wine;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    align-self: flex-end;
+                    &_star{
+                        margin-right: 2rem;
+                        height: 4rem;
+                        width: 4rem;
+                    }
+                    &_text{
+                        font-family: 'Roboto';
+                        font-size: 2.9rem;
+                        text-transform: uppercase;
                         color: $clr-wine;
                     }
                 }
             }
-            .header_phones{
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                max-width: 49rem;
-                width: 100%;
-                margin-bottom: 2rem;
-                p{
-                    color: $clr-wine;
-                    font-size: 2.9rem;
-                    font-family: 'Roboto';
-                    font-weight: bold;
-                }
+            &_title{
+                position: relative;
+                z-index: 7;
+                font-size: 4rem;
+                font-family: 'Roboto';
+                color: $clr-wine;
+                margin-left: 2.2rem;
             }
         }
-        &_bottom{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .header_burger-menu{
-                order:1;
-                
-                z-index: 6;
-                position: relative;
-                display: flex;
-                &_btn{
-                    position: relative;
-                    z-index: 7;
-                    padding: 0;
-                    background: none;
-                    border: none;
-                    outline: none;
-                    svg{
-                        transition-property: fill;
-                        transition-duration: 0.3s;
-                        fill: $clr-wine;
-                        &:hover{
-                            fill: darken($clr-wine, 10%);
-                        }
-                    }
-                }
-                &_list{
-                    padding-top: 8.8rem;
-                    padding-left: 2rem;
-                    width: 135rem;
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: flex-end;
-                    top: -1rem;
-                    left: -2rem;
-                    position: absolute;
-                    box-shadow: 0px 12px 20px $clr-light-gray;
-                    background-color: $clr-white;
-                    z-index: 5;
-                    .col-1,
-                    .col-2,
-                    .col-3{
-                        width: 33%;
-                    }
-                    &_item{
-                        margin-bottom: 4rem;
-                        &_title{
-                            font-size: 2.9rem;
-                            color: $clr-wine;
-                            font-family: 'Roboto';
-                        }
-                        ul{
-                            padding-top: 0.5rem;
-                            padding-left: 5.5rem;
-                            li{
-                                //list-style-type: disc;
-                                &:before{
-                                    display: inline-block;
-                                    content:'';
-                                    width: 0.5rem;
-                                    height: 0.5rem;
-                                   
-                                    background-color: $clr-black;
-                                    border-radius: 50%;
-                                    margin-bottom: 0.8rem;
-                                    margin-right: 0.5rem;
-                                }
-                                a{
-                                    font-size: 2.9rem;
-                                    font-family: 'Roboto-light';
-                                    color: $clr-black;
-                                    cursor: pointer;
-                                    &:hover{
-                                        color: $clr-wine;
-                                    } 
-                                }
-                            }
-                        }
-                    }
-                    .hit-sales-link{
+        .header_search-field{
 
-                        width: 33%;
-                        height: 9rem;
-                        border-top: 3px solid $clr-wine;
-                        display: flex;
-                        align-items: center;
-                        justify-content: flex-start;
-                        &_star{
-                            margin-right: 2rem;
-                            height: 4rem;
-                            width: 4rem;
-                            
-                        }
-                        &_text{
-                            font-family: 'Roboto';
-                            font-size: 2.9rem;
-                            text-transform: uppercase;
-                            color: $clr-wine;
-                        }
-                    }
-                }
-                &_title{
-                    position: relative;
-                    z-index: 7;
-                    font-size: 4rem;
-                    font-family: 'Roboto';
-                    color: $clr-wine;
-                    margin-left: 2.2rem;
-                }
+            position: relative;
+            order: 4;
+            &_magnifying{
+                position: absolute;
+                top: 50%;
+                margin-top: -2rem;
+                left: 6px;
+                fill: $clr-wine;
+                transition-property: fill;
+                transition-duration: 0.3s;
             }
-            .header_search-field{
+            &_input{
+                padding-left: 6rem;
+                background: none;
                 position: relative;
-                order: 2;
-                &_magnifying{
-                    position: absolute;
-                    top: 50%;
-                    margin-top: -1.6rem;
-                    left: 6px;
-                    fill: $clr-wine;
-                    transition-property: fill;
-                    transition-duration: 0.3s;
-                }
-                &_input{
-                    padding-left: 6rem;
-                    background: none;
-                    position: relative;
-                    transition-property: border;
-                    transition-duration: 0.3s;
-                    font-size: 1.8rem;
-                    max-width: 32.6rem;
-                    width: 100%;
-                    height: 4.3rem;
-                    border: 2px solid transparent;
-                    outline: none;
-                    &:focus::-webkit-input-placeholder {
-                        color: transparent;
-                    }
-                    &:focus::-moz-placeholder {
-                        color: transparent;
-                    }
-                    &:focus:-moz-placeholder {
-                        color: transparent;
-                    }
-                    &:focus:-ms-input-placeholder {
-                        color: transparent;
-                    }
-                    &:focus{
-                        border-color: $clr-light-gray;
-                    }
-                    &:focus~.header_search-field_magnifying{
-                        fill: $clr-light-gray;
-                    }
-                    &::-webkit-search-decoration, 
-                    &::-webkit-search-cancel-button, 
-                    &::-webkit-search-results-button, 
-                    &::-webkit-search-results-decoration {
-                        display: none;
-                    }
-                }
-            }
-            .header_callback{
-                order: 3;
-                cursor: pointer;
-                max-width: 20.3rem;
+                font-size: 1.8rem;
+                max-width: 32.6rem;
                 width: 100%;
                 height: 4.3rem;
-                background: none;
                 border: 2px solid transparent;
-                color: $clr-light-gray;
-                font-size: 1.6rem;
-                transition-property: border;
-                transition-duration: 0.3s;
-                &:hover{
+                outline: none;
+                &:focus::-webkit-input-placeholder {
+                    color: transparent;
+                }
+                &:focus::-moz-placeholder {
+                    color: transparent;
+                }
+                &:focus:-moz-placeholder {
+                    color: transparent;
+                }
+                &:focus:-ms-input-placeholder {
+                    color: transparent;
+                }
+                &:focus{
                     border-color: $clr-light-gray;
                 }
-                outline: none;
-            }
-            .header_account{
-                order: 3;
-                background: none;
-                margin: 0 1rem;
-                svg{
-                    fill: $clr-wine;
+                &:focus~.header_search-field_magnifying{
+                    fill: $clr-light-gray;
+                }
+                &::-webkit-search-decoration, 
+                &::-webkit-search-cancel-button, 
+                &::-webkit-search-results-button, 
+                &::-webkit-search-results-decoration {
+                    display: none;
                 }
             }
-            .header_vertical-line{
-                order: 4;
-                height: 3.6rem;
-                border-right: 2px solid $clr-wine;
-                margin: 0 1rem;
+            .input-show{
+                top: -0.5rem;
+                z-index: 5;
+                width: 35rem;
+                height: 4.5rem;
+                border: 1px solid   $clr-light-gray;
+                background-color: $clr-white;
             }
-            .header_favourites{
-                order: 5;
-                background: none;
-                margin: 0 1rem;
-                svg{
-                    fill: $clr-wine;
-                }
+        }
+        .header_callback{
+            order: 5;
+            cursor: pointer;
+            //max-width: 20.3rem;
+            //width: 100%;
+            height: 4.3rem;
+            background: none;
+            border: 2px solid transparent;
+            color: $clr-light-gray;
+            font-size: 1.6rem;
+            transition-property: border;
+            transition-duration: 0.3s;
+            &:hover{
+                border-color: $clr-light-gray;
             }
-            .header_graph{
-                order: 6;
-                background: none;
-                margin: 0 1rem;
-                svg{
-                    fill: $clr-wine;
-                }
-                
+            outline: none;
+        }
+        .header_account{
+            order: 6;
+            background: none;
+            margin: 0 1rem;
+            svg{
+                fill: $clr-wine;
             }
-            .header_cart{
-                order: 7;
-                background: none;
-                margin: 0 1rem;
-                svg{
-                    fill: $clr-wine;
-                }
+        }
+        .header_vertical-line{
+            order: 7;
+            height: 3.6rem;
+            border-right: 2px solid $clr-wine;
+            margin: 0 1rem;
+        }
+        .header_favourites{
+            order: 7;
+            background: none;
+            margin: 0 1rem;
+            svg{
+                fill: $clr-wine;
             }
-            .btn{
-                position: relative;
-                background-size: cover;
-                border: none;
-                outline: none;
-                padding: 0;
-                cursor: pointer;
-                &_figure{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    position: absolute;
-                    right: -7px;
-                    top: -3px;
-                    width: 1.6rem;
-                    height: 1.6rem;
-                    color: $clr-white;
-                    border-radius: 50%;
-                    background-color: $clr-wine;
-                }
+        }
+        .header_graph{
+            order: 8;
+            background: none;
+            margin: 0 1rem;
+            svg{
+                fill: $clr-wine;
             }
+            
+        }
+        .header_cart{
+            order: 9;
+            background: none;
+            margin: 0 1rem;
+            svg{
+                fill: $clr-wine;
+            }
+        }
+        .btn{
+            position: relative;
+            border: none;
+            outline: none;
+            padding: 0;
+            cursor: pointer;
+            &_figure{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                right: -7px;
+                top: -3px;
+                width: 1.6rem;
+                height: 1.6rem;
+                color: $clr-white;
+                border-radius: 50%;
+                background-color: $clr-wine;
+            }
+            
         }
     }
 }

@@ -8,9 +8,10 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
     $('.hit-sales_slider').slick({
-        slidesToShow: 2,
+        slidesToShow: 4,
         slidesToScroll: 1,
         variableWidth: true,
+        //centerMode: true,
         responsive: [
             {
             breakpoint: 1024,
@@ -28,7 +29,7 @@ $(document).ready(function(){
             }
             },
             {
-            breakpoint: 480,
+            breakpoint: 500,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1

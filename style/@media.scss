@@ -7,13 +7,11 @@
         }
         &_logo{
             margin-bottom: 2rem;
+            margin-top: 2rem;
         }
     }
 }
 @media screen and (max-width: 1500px){
-    *{
-        font-size: 8px;
-    }
     .stay-in-touch{
         padding: 5rem 0 9rem 0;
         border-top: 3px solid $clr-light-gray;
@@ -27,39 +25,82 @@
         }
     }
 }
-@media screen and (max-width: 1060px){
+@media screen and (max-width: 1400px){
     .header{
         &_general-block{
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 1310px;
-            width: 100%;
-            &_top{
+            .header_phones{
+                width: 70%;
                 justify-content: center;
+            }
+            .header_burger-menu{
+                &_title{
+                    display: flex;
+                    align-items: center;
+                    font-size: 2.5rem;
+
+                }
+            }
+            .header_callback{
+                width: 30%;
+                order: 2;
             }
         }
     }
 }
+@media screen and (max-width: 1060px){
+    *{
+        font-size: 9px;
+    }
+}
 @media screen and (max-width: 800px){
+    .big-link{
+        font-size: 2rem;
+    }
     .header{
         &_general-block{
-            &_bottom{
-                flex-wrap: wrap;
-                .header_burger-menu{
-                    margin-right: 4rem;
-                    &_title{
-                        display: none;
+            flex-wrap: wrap;
+            .header_burger-menu{
+                margin-right: 4rem;
+                &_title{
+                    display: none;
+                }
+                &_list{
+                    .col-4,
+                    .col-5{
+                        margin: 0;
+                        justify-content: flex-start;
+                    }
+                    .col-1{
+                        order: 2;
+                    }
+                    .col-2{
+                        order: 3;
+                    }
+                    .col-3{
+                        order: 4;
+                    }
+                    .col-4{
+                        order: 5;
+                    }
+                    .col-5{
+                        margin-bottom: 4rem;
+                        order: 1;
+                        .hit-sales-link{
+                            width: 100%;
+                            border: none;
+                            border-bottom: 3px solid $clr-wine;
+                        }
                     }
                 }
-                .header_search-field{
-                   &_input{
-                       //position: absolute;
-                       width: 0;
-                       &:hover{
-                           width: 100%;
-                       }
-                   }
-
+            }
+            .header_search-field{
+                width: 38px;
+                &_input{
+                    position: absolute;
+                    width: 0;
+                }
+                &_magnifying{
+                    z-index: 5;
                 }
             }
         }
@@ -74,24 +115,30 @@
     }
 }
 @media screen and (max-width: 600px){
+    .header-slider{
+        display: none;
+    }
     .header{
         &_general-block{
-            &_top{
-                .header_navigation{
-                    justify-content: center;
-                    &_link{
-                      width: 100%;  
-                      text-align: center;
-                      margin-bottom: 2rem;
-                    }
+            .header_navigation{
+                justify-content: center;
+                &_link{
+                    width: 100%;  
+                    text-align: center;
+                    margin-bottom: 2rem;
                 }
             }
         }
     }
-    
 }
 
 @media screen and (max-width: 450px){
+    *{
+        font-size: 8px;
+    }
+    .big-link{
+        font-size: 1.5rem;
+    }
     .header{
         &_top{
             padding: 1rem 1rem;
@@ -102,15 +149,17 @@
             padding-top: 3rem;
         }
     }
+    .header{
+        &_general-block{
+            .header_phones{
+                p:first-child{
+                    margin-right: 0;
+                    margin-bottom: 1rem;
+                }
+                p{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
 }
-// @media screen and (max-width: 1600px){
-//     .contacts{
-//         flex-wrap: wrap;
-//         .contacts_block{
-//             max-width: 100%
-//         }
-//         .map{
-//             height: 40rem; 
-//         }
-//     }
-// }
