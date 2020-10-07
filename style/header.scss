@@ -60,9 +60,7 @@
                 font-size: 2.9rem;
                 font-family: 'Roboto';
                 font-weight: bold;
-                &:first-child{
-                    margin-right: 2rem;
-                }
+                margin: 0 1rem;
             }
             
         }
@@ -78,6 +76,9 @@
                 background: none;
                 border: none;
                 outline: none;
+                &:active{
+                    background-color: none;
+                }
                 svg{
                     transition-property: fill;
                     transition-duration: 0.3s;
@@ -111,7 +112,6 @@
                 .col-1,
                 .col-2,
                 .col-3{
-                    //width: 30%;
                     margin: 0 1rem;
                 }
                 .col-5{
@@ -131,7 +131,6 @@
                     justify-content: flex-end;
                     flex-wrap: wrap;
                 }
-                
                 &_item{
                     margin-bottom: 4rem;
                     &_title{
@@ -168,7 +167,6 @@
                     }
                 }
                 .hit-sales-link{
-
                     width: 33%;
                     height: 9rem;
                     border-top: 3px solid $clr-wine;
@@ -199,7 +197,6 @@
             }
         }
         .header_search-field{
-
             position: relative;
             order: 4;
             &_magnifying{

@@ -8,34 +8,43 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
     $('.hit-sales_slider').slick({
-        slidesToShow: 4,
+        infinite: true,
+        slidesToShow: 5,
         slidesToScroll: 1,
-        variableWidth: true,
-        centerMode: true,
         responsive: [
-            {
-            breakpoint: 1024,
+          {
+            breakpoint: 1700,
             settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              infinite: true,
             }
-            },
-            {
-            breakpoint: 600,
+          },
+          {
+            breakpoint: 1400,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
             }
-            },
-            {
-            breakpoint: 500,
+          },
+          {
+            breakpoint: 1100,
             settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
+              slidesToShow: 2,
+              slidesToScroll: 1
             }
+          },
+          {
+            breakpoint: 700,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+              dots: true,
+              autoplay: true
             }
-            
+          }
         ]
     });
 });
